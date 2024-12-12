@@ -67,7 +67,7 @@ def count_users_with_plan(plan):
 
 # Async attack command logic
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
-    command = f"./nand {target_ip} {target_port} {duration}"
+    command = f"./soul {target_ip} {target_port} {duration} 100"
     try:
         process = await asyncio.create_subprocess_shell(
             command,
